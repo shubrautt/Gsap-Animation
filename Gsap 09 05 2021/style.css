@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Work+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    color: #131313;
+}
+body{
+    background: #8A2387;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: white;
+    transform: scale(0.8);
+    border-radius: 20px;
+}
+main .box{
+    width: 550px;
+    margin-left: 8em;
+}
+.heading{
+    font-size: 7em;
+}
+span{
+    position: relative;
+    display: block;
+}
+span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform-origin: top;
+}
+main div p{
+    font-size: 1.2em;
+}
+.btn{
+    margin-top: 1em;
+    width: 150px;
+    height: 40px;
+    background: #f21170;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all .4s;
+}
+.btn:hover{
+    background: #f2116fda;
+}
+
+.img{
+    width: 700px;
+    height: 500px;
+    margin-left: 2.5em;
+    position: relative;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+.img::before, .img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: white;
+    transform-origin: top;
+}
+.img::after{
+    right: 0;
+    bottom: 0;
+    transform-origin: bottom;
+}
